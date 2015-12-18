@@ -9,19 +9,19 @@ public class MergeTest {
 		localmethod();
 		githubmethod();
 	}
-	
-        static private int localmethod(){
-    	      System.out.println("本地增加方法");
-    	      return 1;
-        }
-	
-	static private int githubmethod(){
-              System.out.println("github增加方法");
-    	      return 1;
-        }
-        
-        public static void github(){
-        	
-        }
+
+	static private int localmethod() {
+		System.out.println("本地增加方法");
+		return 1;
+	}
+
+	static private int githubmethod() {
+		System.out.println("github增加方法");
+		return 1;
+	}
+
+	public static void github() {
+
+	}
 
 }
