@@ -34,35 +34,44 @@ class User {
 		this.username = username;
 	}
 
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", username=" + username + "]";
+	}
+	
+	
+
 }
 
 public class CacheThreadPool {
 	public static void main(String[] args) {
+		int i = 0;
 		ExecutorService exec = Executors.newCachedThreadPool();
-		Future<User> future = exec.submit(new Callable<User>() {
-			@Override
-			public User call() throws Exception {
-				// TODO Auto-generated method stub
-				System.out.println("before sleep");
-				User user = new User(1, "zjg");
-				Thread.sleep(500);
-				System.out.println("after sleep");
-				return user;
+		for (i = 0; i < 5; i++) {
+			Future<User> future = exec.submit(new Callable<User>() {
+				@Override
+				public User call() throws Exception {
+					System.out.println("before sleep");
+					User user = new User(1, "zjg");
+					Thread.sleep(400);
+					System.out.println("after sleep");
+					return user;
+				}
+			});
+			try {
+				future.get(500, TimeUnit.MILLISECONDS);
+				System.out.println(future.get().toString());
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (ExecutionException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (TimeoutException e) {
+				// TODO Auto-generated catch block
+				System.out.println("timeout\n");
+				e.printStackTrace();
 			}
-		});
-
-		try {
-			future.get(501, TimeUnit.MILLISECONDS);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ExecutionException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (TimeoutException e) {
-			// TODO Auto-generated catch block
-			System.out.println("timeout\n");
-			e.printStackTrace();
 		}
 	}
 }
