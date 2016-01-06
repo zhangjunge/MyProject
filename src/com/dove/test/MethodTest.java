@@ -8,6 +8,10 @@ public class MethodTest {
 	public MethodTest() {
 		// TODO Auto-generated constructor stub
 	}
+	
+	public server(){
+		
+	}
 	public static void main(String[] args) {
 		
 		String currentShouldRepayTotalStr = "110.0952";
