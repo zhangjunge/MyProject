@@ -10,6 +10,8 @@ public class MethodTest {
 		// TODO Auto-generated constructor stub
 	}
 	
+	public void local(){}
+	
 	public void
 	server(){
 		
