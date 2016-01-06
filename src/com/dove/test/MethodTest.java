@@ -8,7 +8,7 @@ public class MethodTest {
 	public MethodTest() {
 		// TODO Auto-generated constructor stub
 	}
-
+	
 	public server(){
 		
 	}
@@ -25,8 +25,6 @@ public class MethodTest {
 		if( bd.compareTo(sum)<0){
 			System.out.println("bd<sum");
 		}
-		
-		
 		 
 		 
 	}
