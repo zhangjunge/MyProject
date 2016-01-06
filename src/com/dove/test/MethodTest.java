@@ -8,6 +8,10 @@ public class MethodTest {
 	public MethodTest() {
 		// TODO Auto-generated constructor stub
 	}
+	
+	public void local(){
+		
+	}
 	public static void main(String[] args) {
 		
 		String currentShouldRepayTotalStr = "110.0952";
@@ -21,6 +25,8 @@ public class MethodTest {
 		if( bd.compareTo(sum)<0){
 			System.out.println("bd<sum");
 		}
+		
+		
 		 
 		 
 	}
