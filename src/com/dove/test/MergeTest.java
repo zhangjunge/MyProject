@@ -12,6 +12,7 @@ public class MergeTest {
 
 	static private int localmethod() {
 		System.out.println("本地增加方法");
+		String s = "gibhubshangzengjia";
 		return 1;
 	}
 
