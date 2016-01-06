@@ -8,8 +8,8 @@ public class MethodTest {
 	public MethodTest() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	public void local(){
+
+	public server(){
 		
 	}
 	public static void main(String[] args) {
