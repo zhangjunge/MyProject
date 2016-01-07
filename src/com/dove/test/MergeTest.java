@@ -23,5 +23,9 @@ public class MergeTest {
 	public static void github() {
 
 	}
+	
+	public static void zaiciceshilocal() {
+
+	}
 
 }
