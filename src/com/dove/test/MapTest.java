@@ -21,12 +21,12 @@ public class MapTest {
 		// TODO Auto-generated constructor stub
 		Map<String,String> extensionMap = new HashMap<String,String>();
 		String value = extensionMap.get("userType");
-		
+
 		if(value.equals("")){
 			boolean isOpenFinance = true;
 		}
 	}
-	
-	
+
+
 
 }
