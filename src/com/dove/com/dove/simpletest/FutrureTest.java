@@ -65,5 +65,6 @@ public class FutrureTest {
         System.out.println("run zhihou ");
         System.out.println("zjg local edit");
         System.out.println("github edit");
+        System.out.println("master 0507 merger master remote");
     }
 }
