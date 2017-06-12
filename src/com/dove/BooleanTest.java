@@ -11,7 +11,7 @@ public class BooleanTest {
 
     public static void main(String[] args){
         Boolean flag = true;
-
+        System.out.println(flag);
         Integer i = 9;
         String s = i.toString();
         System.out.print(s);
